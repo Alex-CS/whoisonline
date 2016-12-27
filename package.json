@@ -1,0 +1,18 @@
+{
+  "name": "whoisonline",
+  "version": "0.0.1",
+  "description": "Small script to see and log who is online in your network",
+  "main": "index.js",
+  "author": "BirKaseCorba <ugurvolkangul@gmail.com>",
+  "license": "MIT",
+  "bin": {
+    "wio": "./index.js"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "moment": "^2.17.1",
+    "node-persist": "^2.0.7",
+    "ping": "^0.2.1",
+    "prompt": "^1.0.0"
+  }
+}
