@@ -2,12 +2,11 @@
 const program = require('commander');
 const storage = require('node-persist');
 const prompt = require('prompt');
-storage.initSync({ ttl: 1000 * 60 * 60 * 24 * 365 });
-
 const fs = require('fs');
 const ping = require('ping');
 const moment = require('moment');
 const exec = require('child_process').exec;
+storage.initSync({ ttl: 1000 * 60 * 60 * 24 * 365 });
 
 program
   .command('add')
@@ -211,5 +210,3 @@ program.parse(process.argv);
 function verbose(text) {
   program.verbose && console.log(text);
 }
-
-module.exports = program;
