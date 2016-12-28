@@ -43,7 +43,7 @@ program
   })
 
 program
-  .command('run')
+  .command('run', '', {isDefault: true})
   .option('-v, --verbose')
   .option('-f, --force')
   .description('Runs the script to check who is online specified in log file')
@@ -94,7 +94,7 @@ program
     }
 
     function isMorning() {
-      return moment().isBetween(moment().hour(08).minute(00), moment().hour(24).minute(00))
+      return moment().isBetween(moment().hour(08).minute(00), moment().hour(12).minute(00))
     }
 
     function getIpWithArp(username) {
